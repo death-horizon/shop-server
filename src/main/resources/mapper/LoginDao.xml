@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.death.horizon.shopserver.dao.LoginDao">
+    <select id="getUser" parameterType="com.death.horizon.shopserver.model.User" resultType="com.death.horizon.shopserver.model.User">
+        select username, password_hash
+        from user
+        where username = #{username}
+          and password_hash = #{passwordHash}
+    </select>
+
+    <insert id="insertUser" parameterType="com.death.horizon.shopserver.model.User">
+        insert user (username, password_hash)
+        values (#{username}, #{passwordHash})
+    </insert>
+</mapper>
