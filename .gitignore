@@ -16,6 +16,7 @@ HELP.md
 *.iml
 *.ipr
 
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -26,3 +27,5 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+src/main/resources/application-dev.yml
