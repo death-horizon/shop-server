@@ -1,6 +1,6 @@
 HELP.md
 /target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn
 ### STS ###
 .apt_generated
 .classpath
@@ -26,4 +26,3 @@ HELP.md
 
 ### VS Code ###
 .vscode/
-.mvn
